@@ -21,14 +21,14 @@ const Tab1: React.FC = () => {
             <IonCard>
           <img alt="Silhouette of mountains" src="../src/assets/img/raiden.png" />
           <IonCardHeader>
-            <IonCardTitle>Card Title</IonCardTitle>
-            <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+            <IonCardTitle>Raiden Shogun</IonCardTitle>
+            <IonCardSubtitle>Archon of Inazuma</IonCardSubtitle>
           </IonCardHeader>
 
-          <IonCardContent>Here's a small text description for the card content. Nothing more, nothing less.</IonCardContent>
+          <IonCardContent>Plane of Euthyemia</IonCardContent>
         </IonCard>
 
-        <ExploreContainer name="Tab 1 page" />
+        <ExploreContainer name="" />
       </IonContent>
     </IonPage>
   );
