@@ -1,0 +1,7 @@
+{
+  "name": "ion-t-saplot",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
