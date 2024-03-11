@@ -19,7 +19,7 @@ const Tab1: React.FC = () => {
         </IonHeader>
         
             <IonCard>
-          <img alt="Silhouette of mountains" src="../src/assets/img/raiden.png" />
+          <img alt="Silhouette of mountains" src="../src/assets/img/raiden.jpg" />
           <IonCardHeader>
             <IonCardTitle>Raiden Shogun</IonCardTitle>
             <IonCardSubtitle>Archon of Inazuma</IonCardSubtitle>
