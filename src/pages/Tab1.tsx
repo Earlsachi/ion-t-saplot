@@ -1,5 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle,
-  IonAlert, IonButton} from '@ionic/react';
+  IonAlert, IonButton, IonActionSheet} from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
@@ -8,7 +8,7 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Raiden</IonTitle>
+          <IonTitle>Raiden Shogun</IonTitle>
         </IonToolbar>
       </IonHeader>
       
@@ -36,6 +36,35 @@ const Tab1: React.FC = () => {
         message="In the near future, she will get her signature weapon the engulfing lightning."
         buttons={['Action']}
       ></IonAlert>
+
+      <IonButton id="open-action-sheet">Press to Action Sheet</IonButton>
+      <IonActionSheet
+        trigger="open-action-sheet"
+        header="Actions"
+        buttons={[
+          {
+            text: 'Delete',
+            role: 'destructive',
+            data: {
+              action: 'delete',
+            },
+          },
+          {
+            text: 'Share',
+            data: {
+              action: 'share',
+            },
+          },
+          {
+            text: 'Cancel',
+            role: 'cancel',
+            data: {
+              action: 'cancel',
+            },
+          },
+        ]}
+      ></IonActionSheet>
+
 
         </IonCard>
 
