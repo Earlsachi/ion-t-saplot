@@ -28,7 +28,7 @@ const Tab1: React.FC = () => {
 
           <IonCardContent>Plane of Euthyemia</IonCardContent>
           
-          <IonButton id="present-alert">Press to Start</IonButton>
+          <IonButton color="success" id="present-alert">Press to Start</IonButton>
       <IonAlert
         trigger="present-alert"
         header="Raiden Shogun is the Archon of Inazuma"
@@ -37,7 +37,7 @@ const Tab1: React.FC = () => {
         buttons={['Action']}
       ></IonAlert>
 
-      <IonButton id="open-action-sheet">Press to Action Sheet</IonButton>
+      <IonButton color="danger" id="open-action-sheet">Press to Action Sheet</IonButton>
       <IonActionSheet
         trigger="open-action-sheet"
         header="Actions"
