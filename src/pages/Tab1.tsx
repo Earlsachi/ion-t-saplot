@@ -34,7 +34,7 @@ const Tab1: React.FC = () => {
         header="Raiden Shogun is the Archon of Inazuma"
         subHeader="She weilds the Mosou no Hitotachi"
         message="In the near future, she will get her signature weapon the engulfing lightning."
-        buttons={['Action']}
+        buttons={['Exit']}
       ></IonAlert>
 
       <IonButton color="danger" id="open-action-sheet">Press to Action Sheet</IonButton>
