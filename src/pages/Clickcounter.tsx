@@ -1,5 +1,18 @@
+import {
+  IonBackButton,
+  IonButton,
+  IonButtons,
+  IonCol,
+  IonContent,
+  IonGrid,
+  IonHeader,
+  IonPage,
+  IonRow,
+  IonTitle,
+  IonToolbar
+} from '@ionic/react';
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonGrid, IonRow, IonCol, IonBackButton, IonButtons } from '@ionic/react';
+import './Clickcounter.css';
 
 const Click_counter: React.FC = () => {
   const [counter, setCounter] = useState<number>(0);
@@ -16,38 +29,38 @@ const Click_counter: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
+          <IonButtons slot="start">
+            <IonBackButton defaultHref="/" />
+          </IonButtons>
           <IonTitle>Click Counter</IonTitle>
         </IonToolbar>
       </IonHeader>
       
-      <IonButtons slot="start">
-        <IonBackButton defaultHref="/" />
-      </IonButtons>
-      <IonContent fullscreen className="ion-padding" style={{ backgroundColor: '#f0f0f0' }}>
+      <IonContent fullscreen className="ion-padding click-counter-content">
         <IonGrid>
           <IonRow className="ion-align-items-center">
             <IonCol size="12" className="ion-text-center">
-              <img src="src/assets/img/raiden.png" alt="Button" style={{ width: '150px', height: '150px' }} />
+              <img src="https://raw.githubusercontent.com/Earlsachi/ion-t-saplot/dev-quotesgenerator-firebase/src/assets/img/raiden.jpg" alt="Button" className="counter-image" />
             </IonCol>
           </IonRow>
           <IonRow className="ion-align-items-center">
             <IonCol size="12" className="ion-text-center">
-              <IonButton onClick={incrementCounter} expand="block" color="secondary" style={{ fontSize: '24px' }}>Click Me!</IonButton>
+              <IonButton onClick={incrementCounter} expand="block" color="tertiary" className="click-button">Click Me!</IonButton>
             </IonCol>
           </IonRow>
           <IonRow className="ion-align-items-center">
             <IonCol size="12" className="ion-text-center">
-              <p style={{ fontSize: '32px' }}>Counter: {counter}</p>
+              <p className="counter-display">Counter: {counter}</p>
             </IonCol>
           </IonRow>
           <IonRow className="ion-align-items-center">
             <IonCol size="12" className="ion-text-center">
-              <IonButton onClick={resetCounter} expand="block" color="secondary" style={{ fontSize: '20px' }}>Reset</IonButton>
+              <IonButton onClick={resetCounter} expand="block" color="tertiary" className="reset-button">Reset</IonButton>
             </IonCol>
           </IonRow>
         </IonGrid>
       </IonContent>
-   </IonPage>
+    </IonPage>
   );
 };
 

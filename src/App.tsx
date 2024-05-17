@@ -63,7 +63,7 @@ const App: React.FC = () => (
           <Route exact path="/todolist">
             <Todolist />
           </Route>
-          <Route exact path="/qoutes_generator">
+          <Route exact path="/quotes_generator">
             <QuotesGenerator />
           </Route>
           <Route exact path="/notes">

@@ -19,6 +19,9 @@ import {
   IonTextarea,
   IonTitle,
   IonToolbar,
+  IonBackButton,
+  IonButtons,
+
   useIonToast
 } from '@ionic/react';
 import React, { useEffect, useRef, useState } from 'react';
@@ -147,9 +150,9 @@ const deleteNote = async (index: number) => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButton slot="start" fill="clear" href='/'>
-            Back
-          </IonButton>
+        <IonButtons slot="start">
+          <IonBackButton defaultHref="/" />
+        </IonButtons>
           <IonTitle>Notes</IonTitle>
         </IonToolbar>
       </IonHeader>

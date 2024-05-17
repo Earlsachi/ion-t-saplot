@@ -1,0 +1,33 @@
+/* Click_counter.css */
+
+.click-counter-content {
+    background-color: #f0f0f0;
+  }
+  
+  .counter-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  
+  .click-button {
+    font-size: 24px;
+    margin-top: 20px;
+    --background: #3880ff; /* Primary color */
+    --background-hover: #3171e0; /* Darker primary color on hover */
+  }
+  
+  .counter-display {
+    font-size: 32px;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .reset-button {
+    font-size: 20px;
+    margin-top: 20px;
+    --background: #eb445a; /* Danger color */
+    --background-hover: #d3394c; /* Darker danger color on hover */
+  }
+  

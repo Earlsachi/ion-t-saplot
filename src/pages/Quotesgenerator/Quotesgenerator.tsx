@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from 'react';
 import {
   IonAlert,
   IonBackButton,
@@ -10,28 +11,28 @@ import {
   IonCardTitle,
   IonCol,
   IonContent,
+  IonGrid,
   IonHeader,
   IonIcon,
   IonInput,
   IonItem,
-  IonItemDivider,
   IonLabel,
   IonList,
   IonPage,
   IonRow,
-  IonTextarea,
   IonTitle,
   IonToolbar,
+  IonItemDivider,
+  IonTextarea,
   useIonToast
 } from '@ionic/react';
-import React, { useEffect, useRef, useState } from 'react';
 //Ionicons
-import { pencilOutline, trashOutline } from 'ionicons/icons';
+import { trashOutline, pencilOutline } from 'ionicons/icons';
 
 import './Quotesgenerator.css';
 
 // Firebase
-import { addDoc, collection, deleteDoc, doc, onSnapshot, updateDoc } from 'firebase/firestore';
+import { collection, addDoc, onSnapshot,updateDoc,doc, deleteDoc} from 'firebase/firestore';
 import { db } from './Firebase';
 
 const QuotesGenerator: React.FC = () => {
